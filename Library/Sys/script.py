@@ -1,7 +1,7 @@
 import sys
 
-api_version = sys.api_version
-print(f"Api Version: {api_version}")
+var_api_version = sys.api_version
+print(f"Api Version: {var_api_version}")
 
-system_version = sys.version_info
-print(f"Version System: {system_version}")
+var_system_version = sys.version_info
+print(f"Version System: {var_system_version}")
