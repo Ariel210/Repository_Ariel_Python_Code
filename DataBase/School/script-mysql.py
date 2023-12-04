@@ -1,9 +1,11 @@
 import mysql.connector
+import getpass
 
 school_conexion = mysql.connector.connect(
     host = "localhost",
     user = str(input("Enter user name: ")),
-    password = input("Enter password: ")
+    #password = input("Enter password: ")
+    password = getpass.getpass("Enter Password: ")
 )
 
 # Creating cursor
