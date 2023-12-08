@@ -1,23 +1,20 @@
 def game1_python():
     while True:
         print("Welcome to my 1st Game !")
-        
         elements_list = ['Rock', 'Paper', 'Scissors']
+        
+        for element in elements_list:
+            print(f"Elements in the lista: {element}")
+        
         option_player = str(input("Enter one option for Player: "))
         option_pc = str(input("Enter one option for PC: "))
         
-        print(f"\nElements: -> {elements_list}")
-        print(f"Option for Player: {option_player}")
-        print(f"Option for PC: {option_pc}")
-        
-        if option_player == 'Rock' and option_pc == 'Paper':
-            print("Pc Won !")
-        elif option_pc == 'Rock' and option_player == 'Paper':
-            print("Player Won! ")
-        elif option_player == 'Scissors' and option_pc == 'Paper':
-            print("Player Won")
+        if option_player in elements_list[0] and option_pc in elements_list[1]:
+            print("Pc Won!")
+        elif option_pc in elements_list[0] and option_player in elements_list[1]:
+            print("Player Won!")
         else:
-            print("Equals !") 
+            print("Equals !")
             break
 game1_python()
 
