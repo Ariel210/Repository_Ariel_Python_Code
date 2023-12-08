@@ -13,6 +13,10 @@ def game1_python():
             print("Pc Won!")
         elif option_pc in elements_list[0] and option_player in elements_list[1]:
             print("Player Won!")
+        elif option_player in elements_list[1] and option_pc in elements_list[2]:
+            print("PC Won Again!")
+        elif option_pc in elements_list[1] and option_player in elements_list[2]:
+            print("Player Won Again!")
         else:
             print("Equals !")
             break
