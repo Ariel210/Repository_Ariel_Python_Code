@@ -10,10 +10,17 @@ class Animal:
         self.colour = colour
     
     def show_dates(self):
-        print(f"Name of the animal: {self.name}")
-        print(f"Colour of the animal: {self.colour}")       
+        print(f"Name of the Dog: {self.name}")
+        print(f"Colour of the Dog: {self.colour}")       
+
+# Heredity
+class Dog(Animal):
+    def show_dates_dog(self):
+        print("Guau !")
 
 
-animal_1 = Animal()
-animal_1.enter_dates()
-animal_1.show_dates()
+# Instance
+mi_dog_1 = Dog()
+mi_dog_1.enter_dates()
+mi_dog_1.show_dates()
+mi_dog_1.show_dates_dog()
